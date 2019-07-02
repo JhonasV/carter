@@ -1,20 +1,17 @@
 import { Application } from "express";
-import passport from 'passport'
+import passport from "passport";
 
-class AuthRoutes{
-    
-    constructor(){}
+class AuthRoutes {
+  constructor() {}
 
-    AuthMethods(app: Application, pass: passport ){
-        app.post('/login', pass.authenticate('local-login', {
-            successRedirect:{
+  AuthMethods(app: Application, pass: passport) {
+    app.post(
+      "/login",
+      pass.authenticate("local-login", {
+        successRedirect: {}
+      })
+    );
 
-            }
-
-        }))
-
-        app.post('/signup',pass.authenticate('local-signup', {
-            
-        }))
-    }
+    app.post("/signup", pass.authenticate("local-signup", {}));
+  }
 }

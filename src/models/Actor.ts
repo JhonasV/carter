@@ -1,9 +1,9 @@
-import {Schema, model}from "mongoose";
+import { Schema, model } from "mongoose";
 
 const ActorSchema = new Schema({
-    name:String,
-    bio:String,
-    picture: String
-})
+  name: String,
+  bio: String,
+  picture: String
+});
 
-export const Actor = model('Actor', ActorSchema);
+export const Actor = model("Actor", ActorSchema);

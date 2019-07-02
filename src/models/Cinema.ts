@@ -1,9 +1,8 @@
-import {Document, Schema, Model, model} from "mongoose";
-
+import { Document, Schema, Model, model } from "mongoose";
 
 export const CinemaSchema = new Schema({
-    name:String,
-    site:String,
-    logo:String
-})
-export const Cinema  = model('Cinema', CinemaSchema);
+  name: String,
+  site: String,
+  logo: String
+});
+export const Cinema = model("Cinema", CinemaSchema);

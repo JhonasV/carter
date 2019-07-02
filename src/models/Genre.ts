@@ -1,10 +1,10 @@
-import * as mongoose from 'mongoose';
+import * as mongoose from "mongoose";
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 const GenreSchema = new Schema({
-    name:{type:String, Required:true},
-    details:{type:String}
-})
+  name: { type: String, Required: true },
+  details: { type: String }
+});
 
-mongoose.model('Genre', GenreSchema);
+mongoose.model("Genre", GenreSchema);
